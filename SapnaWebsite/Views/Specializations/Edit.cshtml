@@ -1,0 +1,40 @@
+@model Specialization
+
+@{
+    Layout = "_Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb pull-right">
+            <li><a asp-action="Index" asp-controller="Specializations">Back to Specialization List</a></li>
+            <li><a asp-action="Index" asp-controller="Dashboard">Back to Dashboard</a></li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="formwrapper">
+    <form class="specializationform" asp-action="Edit">
+        <h2 class="specializationheader"><i class="fa fa-code-fork"> Specialization</i></h2>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <input type="hidden" asp-for="SpecializationId" />
+
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Name" required="" autofocus="" />
+        <br>
+
+        <span asp-validation-for="SchoolOrSapna" class="text-danger"></span>
+        <fieldset class="form-group">
+            <label asp-for="SchoolOrSapna">Specialization obtained</label>
+            <select class="form-control" id="majorSelect" asp-for="SchoolOrSapna">
+                <option>Sapna</option>
+                <option>School</option>
+            </select>
+        </fieldset>
+        <br>
+        <button id="form_button" class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+    </form>
+</div>
+

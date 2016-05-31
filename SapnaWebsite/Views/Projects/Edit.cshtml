@@ -1,0 +1,110 @@
+@model EditProjectViewModel
+
+@{
+    Layout = "_Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb pull-right">
+            <li><a asp-action="Index" asp-controller="Projects">Back to Project List</a></li>
+            <li><a asp-action="Index" asp-controller="Dashboard">Back to Dashboard</a></li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="projectwrapper">
+    <form class="profileform" asp-action="Edit">
+        <input type="hidden" asp-for="ProjectId" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <h2 class="projectheader"><i class="fa fa-briefcase"> Project</i></h2>
+
+        <div id="top" class="top">
+            <div class="col-xs-6 col-md-4">
+                <span asp-validation-for="Title" class="text-danger"></span>
+                <input type="text" class="form-control" asp-for="Title" placeholder="Title" required="" autofocus="" />
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <span asp-validation-for="DateStarted" class="text-danger"></span>
+                <input class="form-control" id="date" asp-for="DateStarted" type="text" />
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <span asp-validation-for="DateCompleted" class="text-danger"></span>
+                <input class="form-control" id="Complete" asp-for="DateCompleted" type="text" />
+            </div>
+        </div>
+
+        <div class="col-xs-12" style="padding-top:10px;">
+            <span asp-validation-for="Description" class="text-danger"></span>
+            <textarea class="form-control" asp-for="Description" rows="5" placeholder="Description"></textarea>
+        </div>
+        <div class="col-xs-6 col-md-4" style="padding-top:10px;">
+            <span asp-validation-for="TechnologiesUsed" class="text-danger"></span>
+            <fieldset class="form-group">
+                <label asp-for="TechnologiesUsed">Technologies Used</label>
+                <input type="text" asp-for="TechnologiesUsed" placeholder="Tags" class="tm-input form-control" />
+            </fieldset>
+        </div>
+
+        <div class="col-xs-6 col-md-4" style="padding-top:10px;">
+            <span asp-validation-for="SkillIds" class="text-danger"></span>
+            <fieldset class="form-group">
+                <label asp-for="SkillIds">Skills</label>
+                <select class="form-control selectSkills" asp-for="SkillIds" multiple="multiple" required>
+                    @for (int i = 0; i < Model.SkillsList.Count; i++)
+                    {
+                        <option value="@Model.SkillsList[i].SkillId">@Model.SkillsList[i].Name</option>
+                    }
+                </select>
+            </fieldset>
+        </div>
+
+        <div class="col-xs-6 col-md-4" style="padding-top:10px;">
+            <span asp-validation-for="Members" class="text-danger"></span>
+            <fieldset class="form-group">
+                <label asp-for="Members">Members</label>
+                <select class="form-control selectMembers" asp-for="Members" multiple="multiple" required>
+                    @for (int i = 0; i < Model.MembersList.Count; i++)
+                    {
+                        <option value="@Model.MembersList[i].MemberId">@Model.MembersList[i].FirstName @Model.MembersList[i].LastName</option>
+                    }
+                </select>
+            </fieldset>
+        </div>
+        <div>
+            <button id="project_button" class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+        </div>
+    </form>
+</div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts{
+    <script>
+    $(document).ready(function () {
+        if ($("#date").length > 0) {
+            $("#date").datepicker({ format: 'MM dd,yyyy' })
+        }
+
+        if ($("#Complete").length > 0) {
+            $("#Complete").datepicker({ format: 'MM dd,yyyy' })
+        }
+
+        $(".selectMembers").select2({
+            placeholder: "Add Members to project"
+        });
+
+        $(".selectSkills").select2({
+            placeholder: "Select Skills"
+        });
+
+        $(".tm-input").tagsManager();
+    });
+    </script>
+}

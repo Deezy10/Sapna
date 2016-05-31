@@ -1,0 +1,558 @@
+.wrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.registerform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 700px;
+}
+.registerform .registerheader,
+.form-signin .checkbox {
+  padding-left: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.registerform a {
+  text-decoration: none;
+}
+
+.registerform .checkbox {
+  font-weight: normal;
+}
+.registerform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.registerform .form-control:focus {
+  z-index: 2;
+}
+.registerform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.registerform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#join_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin a {
+  text-decoration: none;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  padding-left: 90px;
+  margin-bottom: 30px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#login_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.formwrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+}
+
+#form_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.newsform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 480px;
+}
+.newsform .newsheader,
+.newsform .checkbox {
+  padding-left: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.newsform a {
+  text-decoration: none;
+}
+
+.newsform .checkbox {
+  font-weight: normal;
+}
+.newsform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.newsform .form-control:focus {
+  z-index: 2;
+}
+.newsform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.newsform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+.profileform {
+  max-width: 1000px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 450px;
+}
+.profileform .profileheader,
+.profileform .checkbox {
+  padding-left: 380px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.profileform a {
+  text-decoration: none;
+}
+
+.profileform .checkbox {
+  font-weight: normal;
+}
+.profileform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.profileform .form-control:focus {
+  z-index: 2;
+}
+.profileform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.profileform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#profile_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.projectwrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+}
+
+.projectform {
+  max-width: 1000px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 550px;
+}
+.projectform .projectheader,
+.projectform .checkbox {
+  padding-left: 380px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.projectform a {
+  text-decoration: none;
+}
+
+.projectform .checkbox {
+  font-weight: normal;
+}
+.projectform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.projectform .form-control:focus {
+  z-index: 2;
+}
+.projectform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.projectform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#project_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.roleswrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.rolesform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 320px;
+}
+.rolesform .rolesform,
+.rolesform .checkbox {
+  padding-left: 90px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.rolesform a {
+  text-decoration: none;
+}
+
+.rolesform .checkbox {
+  font-weight: normal;
+}
+.rolesform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.rolesform .form-control:focus {
+  z-index: 2;
+}
+.rolesform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rolesform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#roles_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.skillswrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.skillsform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 400px;
+}
+.skillsform .skillsheader,
+.skillsform .checkbox {
+  padding-left: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.skillsform a {
+  text-decoration: none;
+}
+
+.skillsform .checkbox {
+  font-weight: normal;
+}
+.skillsform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.skillsform .form-control:focus {
+  z-index: 2;
+}
+.skillsform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.skillsform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#skills_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.clientwrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.clientform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+.clientform .clientheader,
+.clientform .checkbox {
+  padding-left: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.clientform a {
+  text-decoration: none;
+}
+
+.clientform .checkbox {
+  font-weight: normal;
+}
+.clientform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clientform .form-control:focus {
+  z-index: 2;
+}
+.clientform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.clientform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#client_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.documentswrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.documentsform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 470px;
+}
+.documentsform .documentsheader,
+.documentsform .checkbox {
+  padding-left: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.documentsform a {
+  text-decoration: none;
+}
+
+.documentsform .checkbox {
+  font-weight: normal;
+}
+.documentsform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.documentsform .form-control:focus {
+  z-index: 2;
+}
+.documentsform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.documentsform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#documents_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+
+.eventswrapper {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+.eventsform {
+  max-width: 380px; 
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 470px;
+}
+.eventsform .form-signin-heading1,
+.eventsform .checkbox {
+  padding-left: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.eventsform a {
+  text-decoration: none;
+}
+
+.eventsform .checkbox {
+  font-weight: normal;
+}
+.eventsform .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.eventsform .form-control:focus {
+  z-index: 2;
+}
+.eventsform input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.eventsform input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#events_button{
+  background-color: #F9A61A;
+  border-color: #fff;
+}
+

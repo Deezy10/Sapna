@@ -1,0 +1,40 @@
+@model Event
+
+@{
+    Layout = "_Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb pull-right">
+            <li><a asp-action="Index" asp-controller="Events">Back to Event List</a></li>
+            <li><a asp-action="Index" asp-controller="Dashboard">Back to Dashboard</a></li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="formwrapper">
+    <form class="eventsform" asp-action="Create" enctype="multipart/form-data">
+        <h2 class="form-signin-heading1"><i class="fa fa-calendar"> Events</i></h2>
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+        <span asp-validation-for="Title" class="text-danger"></span>
+        <input type="text" class="form-control" asp-for="Title" placeholder="Name of Event" required="" autofocus="" />
+        <br>
+
+
+        <span asp-validation-for="Details" class="text-danger"></span>
+        <textarea class="form-control" asp-for="Details"  rows="3" placeholder="Enter Details"></textarea>
+        <br>
+
+        <span asp-validation-for="Photo" class="text-danger"></span>
+        <label asp-for="Photo">Upload a Document</label>
+        <input type="file" class="form-control-file" asp-for="Photo">
+
+        <br>
+        <button id="form_button" class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+    </form>
+</div>
+

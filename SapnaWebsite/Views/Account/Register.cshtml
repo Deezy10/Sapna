@@ -1,0 +1,28 @@
+﻿@model RegisterViewModel
+
+<div class="wrapper">
+    <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-signin">
+        <h2 class="form-signin-heading1"><i class="fa fa-pencil-square-o"> Register</i></h2>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+        <input type="text" class="form-control" asp-for="FirstName" placeholder="First name" required="" autofocus="" />
+        <br>
+
+        <span asp-validation-for="LastName" class="text-danger"></span>
+        <input type="text" class="form-control" asp-for="LastName" placeholder="Last name" required="" autofocus="" />
+        <br>
+
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <input type="email" class="form-control" asp-for="Email" placeholder="Email" required="" autofocus="" />
+        <br>
+
+        <span asp-validation-for="Password" class="text-danger"></span>
+        <input asp-for="Password" class="form-control" placeholder="Password" type="password" required/>
+
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" type="password" required/>
+
+        <button id="login_button" class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+</div>

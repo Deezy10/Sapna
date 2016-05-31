@@ -1,0 +1,45 @@
+@model IEnumerable<Role>
+
+@{
+    Layout = "_Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb pull-right">
+            <li><a asp-action="Create" asp-controller="Roles">Add Role</a></li>
+            <li><a asp-action="Index" asp-controller="Dashboard">Back to Dashboard</a></li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<table class="table table-bordered table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

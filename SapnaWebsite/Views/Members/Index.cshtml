@@ -1,0 +1,75 @@
+@model IEnumerable<Member>
+
+@{
+    Layout = "_Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb pull-right">
+            <!--<li><a asp-action="Create" asp-controller="Specializations">Add Specialization</a></li>-->
+            <li><a asp-action="Index" asp-controller="Dashboard">Back to Dashboard</a></li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsApprove)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Major)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfilePicture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapnaStartYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SchoolGraduationDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsApprove)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Major)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfilePicture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SapnaStartYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SchoolGraduationDate)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.MemberId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MemberId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

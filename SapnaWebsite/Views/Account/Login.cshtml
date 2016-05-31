@@ -1,0 +1,28 @@
+﻿@using System.Collections.Generic
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@model LoginViewModel
+@inject SignInManager<User> SignInManager
+
+<div class="wrapper">
+    <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-signin">
+        <h2 class="form-signin-heading"><i class="fa fa-lock"> Login</i></h2>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <input asp-for="Email" class="form-control" placeholder="Username" required autofocus/>
+        <br>
+
+        <input type="password" class="form-control" asp-for="Password" placeholder="Password" required />
+
+        <label class="checkbox">
+            <input asp-for="RememberMe" />
+            @Html.DisplayNameFor(m => m.RememberMe)
+        </label>
+
+        <button id="login_button" class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <br>
+
+        <p>Not a Sapna member?<a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]"> Register Now</a></p> 
+    </form>
+</div>

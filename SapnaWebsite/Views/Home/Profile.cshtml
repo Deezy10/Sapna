@@ -1,0 +1,58 @@
+﻿@model EditProfileViewModel
+
+<div class="container">
+    <div class="profilewrapper">
+        <form class="profilewrapper">
+            <h2 class="profileheader"><i class="fa fa-user"> Profile</i></h2>
+            <div id="top" class="top">
+                <div class="col-xs-6 col-md-4">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="FirstName" placeholder="First name" required="" autofocus="" />
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                    <input type="text" class="form-control" asp-for="LastName" placeholder="Last name" required="" autofocus="" />
+                </div>
+                <div class="col-xs-6 col-md-4">
+<span asp-validation-for="DateStarted" class="text-danger"></span>
+                <input class="form-control" id="date" asp-for="DateStarted" type="text" />                </div>
+                <div class="col-xs-6 col-md-4" style="padding-top:44px;">
+                    <span asp-validation-for="DateCompleted" class="text-danger"></span>
+                <input class="form-control" id="Complete" asp-for="DateCompleted" type="text" /><input class="form-control" id="Complete" name="date" type="text" placeholder="Graduation Year" />
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-xs-6 col-md-4" style="padding-bottom:10px;">
+                <fieldset class="form-group">
+                    <label asp-for="SkillIds" style="padding-top:20px;">Skills</label>
+                    <select class="form-control selectSkills" asp-for="SkillIds" multiple="multiple" required>
+                    @for (int i = 0; i < Model.SkillsList.Count; i++)
+                    {
+                        <option value="@Model.SkillsList[i].SkillId">@Model.SkillsList[i].Name</option>
+                    }
+                </select>
+                </fieldset>
+            </div>
+            <div class="col-xs-6 col-md-4" style="padding-bottom:10px;">
+                <fieldset class="form-group">
+                    <label for="skillsSelect" style="padding-top:20px;">Specialization</label>
+                    <select class="form-control" id="skillsSelect">
+                        <option></option>
+                        <option>Computer Science Major</option>
+                        <option>Information Technology Major AND Enterprise Systems Minor</option>
+                        <option>Information Technology Major AND Multimedia Technology Minor</option>
+                        <option>Information Technology Major AND Networking Minor</option>
+                        <option>Information Technology Major AND Information Systems Minor</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="col-xs-6 col-md-4" style="padding-bottom:30px;">
+                <input type="text" class="form-control" name="projects" placeholder="Projects" required="" autofocus="" />
+            </div>
+            <div>
+                <button id="profile_button" class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
