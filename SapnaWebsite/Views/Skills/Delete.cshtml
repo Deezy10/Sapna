@@ -5,7 +5,8 @@
 }
 
 <div class="wrapper">
-    <form asp-action="Delete" asp-controller="Skill">
+    <form asp-action="Delete" asp-controller="Skills">
+        <input type="hidde" asp-for="SkillId">
         <div class="alert alert-danger">
             You are about to delete a skill. This action cannot be undone. Are you sure you want to continue?
         </div>

@@ -5,12 +5,13 @@
 }
 
 <div class="wrapper">
-    <form asp-action="Delete" asp-controller="Skill">
+    <form asp-action="Delete" asp-controller="Clients">
+        <input type="hidden" asp-for="ClientId">
         <div class="alert alert-danger">
-            You are about to delete a skill. This action cannot be undone. Are you sure you want to continue?
+            You are about to delete a client. This action cannot be undone. Are you sure you want to continue?
         </div>
         <div class="col-xs-4">
-            <input class="btn btn-danger" value="Yes, Delete this Skill" type="submit" />
+            <input class="btn btn-danger" value="Yes, Delete this client" type="submit" />
         </div>
         <div class="col-xs-4"></div>
         <div class="col-xs-4"><a asp-action="Index" class="btn btn-success">No! Get me out of here</a></div>
